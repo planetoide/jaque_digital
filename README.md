@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 and node version v15.10.0
 
 ## Clone
-
+>git clone https://github.com/planetoide/jaque_digital.git
 ## Install
 cd jaque_digital
 >npm install
