@@ -1,2 +1,9 @@
-<p>dashboard works!</p>
+<mat-toolbar>
+    <a routerLink="/board" mat-button>Users</a>
+    <a routerLink="/board/sales" mat-button>Sales</a>
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
 <router-outlet></router-outlet>
