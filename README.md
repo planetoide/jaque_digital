@@ -1,6 +1,13 @@
 # JaqueDigital
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+and node version v15.10.0
+
+## Clone
+
+## Install
+cd jaque_digital
+>npm install
 
 ## Development server
 
