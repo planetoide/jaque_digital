@@ -6,6 +6,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { ChartsModule } from 'ng2-charts';
 const routes: Routes = [
   {
     path: '',
@@ -25,7 +28,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [DashboardComponent, UsersComponent, SalesComponent],
-  imports: [RouterModule.forChild(routes), MatToolbarModule, MatIconModule, MatButtonModule],
+  imports: [RouterModule.forChild(routes),ChartsModule, MatPaginatorModule,MatTableModule,MatToolbarModule, MatIconModule, MatButtonModule],
   exports: [RouterModule]
 })
 export class DashboardModule { }

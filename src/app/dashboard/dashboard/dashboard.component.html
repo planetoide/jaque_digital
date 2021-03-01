@@ -1,8 +1,9 @@
 <mat-toolbar>
-    <a routerLink="/board" mat-button>Users</a>
-    <a routerLink="/board/sales" mat-button>Sales</a>
+    <a routerLink="/board" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}" mat-button>Users</a>
+    <a routerLink="/board/sales" routerLinkActive="active" mat-button>Sales</a>
     <span class="spacer"></span>
-    <button mat-icon-button aria-label="Example icon-button with share icon">
+    <button mat-icon-button aria-label="Example icon-button with share icon" (click)="logOut()">
         <mat-icon>logout</mat-icon>
     </button>
 </mat-toolbar>
