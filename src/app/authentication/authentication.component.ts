@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 import { AuthenticationService } from '../shared/services/authentication.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { AuthenticationService } from '../shared/services/authentication.service
 export class AuthenticationComponent implements OnInit {
   loginForm: any;
 
-  constructor(private _fb: FormBuilder, private _auth: AuthenticationService) {
+  constructor(private _fb: FormBuilder, private _auth: AuthenticationService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -22,8 +23,8 @@ export class AuthenticationComponent implements OnInit {
   }
 
   onSubmit() {
-    console.warn(this.loginForm.value);
     this._auth.logIn();
+    this.router.navigate(["/board"]);
   }
 
 }

@@ -7,11 +7,15 @@ export class AuthenticationService {
 
   constructor() {}
 
-  public logIn() {
+  public logIn(): void {
     sessionStorage.setItem('isLogin', "true");
   }
 
   public logOut() {
-    sessionStorage.setItem('isLogin', "false");
+    sessionStorage.clear();
+  }
+
+  public loggedIn() {
+    return !!sessionStorage.getItem('isLogin');
   }
 }
